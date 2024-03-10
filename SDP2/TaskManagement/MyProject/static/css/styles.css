@@ -1,0 +1,31 @@
+*{
+    padding:0px;
+    margin:0px;
+
+}
+
+.headerContainer{
+    background:black;
+    width:30vw;
+    height:10vh;
+    margin-left:35vw;
+    border-radius:0px 0px 10px 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding:8px;
+}
+.headerContainer img{
+
+    height:6vh;
+    margin-top:1.5vh;
+    margin-left:6vw;
+    transition:all ease-in-out 0.2s;
+    }
+
+.headerContainer img:hover{
+    cursor:pointer;
+    scale:1.1;
+    transition:all ease-in-out 0.3s;
+}
+a:visited{
+    color:black;
+}

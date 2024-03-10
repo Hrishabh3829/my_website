@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Header{% endblock %}</title>
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    {% block cssLink %}{% endblock %}
+</head>
+
+<body>
+<div class="headerContainer">
+    <a href="/"><img src="{% static 'resources/home_svg.svg' %}" alt="home" id="homeLogo"> </a>
+    <a href="/notification"><img src="{% static 'resources/bell_svg.svg' %}" alt="notification" id="bellLogo"></a>
+    <a href="/account"><img src="{% static 'resources/account_svg.svg' %}" alt="account" id="accountLogo"></a>
+</div>
+
+{% block header %}{% endblock %}
+
+</body>
+</html>

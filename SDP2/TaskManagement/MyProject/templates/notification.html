@@ -1,0 +1,27 @@
+{% extends 'header.html' %}
+{% block title %}Notification{% endblock %}
+{% load static %}
+{% block cssLink %}
+<link rel="stylesheet" href="{% static 'css/notification.css' %}">
+{% endblock %}
+{% block header %}
+<div class="center-layout">
+    <div class="notification">
+        <h3>Task Update</h3>
+        <p>Your task "Complete Project" has been updated.</p>
+        <button>View Details</button>
+    </div>
+
+    <div class="notification">
+        <h3>Deadline Reminder</h3>
+        <p>Your task "Review Design Mockups" is due tomorrow. Please ensure it's completed on time.</p>
+        <button>View Details</button>
+    </div>
+
+    <div class="notification">
+        <h3>Welcome to the New Group!</h3>
+        <p>You have successfully joined the "New Group". Start interacting with other members and complete the task!</p>
+        <button>View Group</button>
+    </div>
+</div>
+{% endblock %}

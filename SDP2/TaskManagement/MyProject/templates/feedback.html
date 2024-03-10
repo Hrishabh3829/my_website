@@ -1,0 +1,35 @@
+{% extends 'header.html' %}
+{% block title %}Account{% endblock %}
+{% load static %}
+{% block cssLink %}<link rel="stylesheet" href="{% static 'css/feedback.css' %}">{% endblock %}
+{% block header %}
+
+
+<body>
+    <div class="container">
+        <h1>Feedback</h1>
+          <div class="form-group">
+                <label for="rating">Rate your experience:</label>
+                <input type="range" id="rating" name="rating" min="1" max="5" step="1" required>
+                <span id="ratingValue">3</span>/5
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <button type="submit">Submit Feedback</button>
+
+    </div>
+
+    <script>
+        // JavaScript to display current rating value
+        const ratingInput = document.getElementById('rating');
+        const ratingValue = document.getElementById('ratingValue');
+        ratingInput.addEventListener('input', function() {
+            ratingValue.textContent = this.value;
+        });
+    </script>
+</body>
+
+{% endblock %}

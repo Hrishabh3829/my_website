@@ -1,0 +1,60 @@
+#homeLogo{
+    scale:1.2;
+}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .create-button1 {
+        color: black;
+        display: flex;
+        justify-content: center;
+        background-color: orange;
+    }
+
+    .create-button {
+        display: none; /* Initially hiding the buttons for individual and group tasks */
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .create-button button {
+        background-color: orange;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .text-box {
+        margin-top: 50px;
+        text-align: center;
+        height:50px;
+    }
+
+    .text-box input[type="text"] {
+        padding: 10px;
+        width: 45%; /* Set the width to 45% of the container */
+        max-width: 300px; /* Set the maximum width to 300px */
+        height: 450px; /* Set a fixed height for the text box */
+        overflow-y:0px auto; /* Enable vertical scrollbar if content exceeds the height */
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .task-display {
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>

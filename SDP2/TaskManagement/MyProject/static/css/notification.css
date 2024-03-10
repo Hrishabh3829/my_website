@@ -1,0 +1,28 @@
+/* Centering the layout */
+.center-layout {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%; /* Adjust as needed */
+}
+
+/* Style for notifications/messages */
+.notification {
+    margin-bottom: 10px;
+}
+
+.notification h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+
+#bellLogo{
+    scale:1.2;
+}
+
